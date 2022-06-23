@@ -9,7 +9,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, windows-latest, macOS-latest]
-        python-version: [3.7.10]
+        python-version: [3.7]
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python 3.7
@@ -22,7 +22,6 @@ jobs:
           activate-environment: CNN
           environment-file: CNN.yml
           python-version: ${{ matrix.python-version }}
-          auto-activate-base: false
       - shell: bash
         run: |
           conda info
