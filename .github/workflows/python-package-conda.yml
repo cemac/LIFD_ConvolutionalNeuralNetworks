@@ -8,27 +8,31 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest]
+        os: [ubuntu-latest windows-latest]
         python-version: [3.7]
     steps:
       - uses: actions/checkout@v2
-      - name: install mamba
-        uses: mamba-org/provision-with-micromamba@main
-        with:
-          environment-file: CNN.yml
-          environment-name: CNN
+      - name: Set up Python 3.7
+        uses: actions/setup-python@v3
+      - name: Add conda to system path
+        run: |
+          # $CONDA is an environment variable pointing to the root of the miniconda directory
+          echo $CONDA/bin >> $GITHUB_PATH
+      - name: Install dependencies
+        run: |
+          conda env update --file CNN.yml --name CNN
       - name: Install test packages
-        shell: bash -l {0}
+        shell: bash
         run: |
           pip install pytest nbconvert nbformat
       - name: which python
-        shell: bash -l {0}
+        shell: bash
         run: |
           which python
       - name: git info
         run: |
           git log --name-only -1 | cat -
       - name: Test with pytest
-        shell: bash -l {0}
+        shell: bash
         run: |
           pytest .github/workflows/test_CNN_notebooks.py
