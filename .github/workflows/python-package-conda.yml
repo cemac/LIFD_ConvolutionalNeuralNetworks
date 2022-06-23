@@ -22,10 +22,6 @@ jobs:
           activate-environment: CNN
           environment-file: CNN.yml
           python-version: ${{ matrix.python-version }}
-      - shell: bash
-        run: |
-          conda info
-          conda list
       - name: Install test packages
         shell: bash
         run: |
