@@ -17,3 +17,5 @@ dependencies:
   - pip>20.3
   - pip:
     - tensorflow==2.3
+    - tensorflow_estimator==1.13.0 
+ 
