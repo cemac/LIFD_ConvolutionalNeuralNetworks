@@ -12,6 +12,8 @@ jobs:
         python-version: [3.7]
     steps:
       - uses: actions/checkout@v2
+        with:
+         submodules: recursive
       - name: install mamba
         uses: mamba-org/provision-with-micromamba@main
         with:
