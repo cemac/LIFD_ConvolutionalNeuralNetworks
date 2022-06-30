@@ -1,0 +1,3 @@
+[submodule "VolcNet"]
+        path = VolcNet
+        url = git@github.com:matthew-gaddes/VolcNet.git

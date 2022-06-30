@@ -1,4 +1,18 @@
+<div align="center">
+<img src="https://github.com/cemac/LIFD_ENV_ML_NOTEBOOKS/blob/main/images/LIFDlogo.png"></a>
+<a href="https://www.cemac.leeds.ac.uk/">
+  <img src="https://github.com/cemac/cemac_generic/blob/master/Images/cemac.png"></a>
+  <br>
+</div>
+
+# Leeds Institute for Fluid Dynamics Machine Learning For Earth Sciences #
+
 # Convolutional Neural Networks
+
+[![GitHub release](https://img.shields.io/github/release/cemac/LIFD_ConvolutionalNeuralNetworks.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/releases) [![GitHub top language](https://img.shields.io/github/languages/top/cemac/LIFD_ConvolutionalNeuralNetworks.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks) [![GitHub issues](https://img.shields.io/github/issues/cemac/LIFD_ConvolutionalNeuralNetworks.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/cemac/LIFD_ConvolutionalNeuralNetworks.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/commits/master) [![GitHub All Releases](https://img.shields.io/github/downloads/cemac/LIFD_ConvolutionalNeuralNetworks/total.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/releases) ![GitHub](https://img.shields.io/github/license/cemac/LIFD_ConvolutionalNeuralNetworks.svg)[![DOI](https://zenodo.org/badge/366734586.svg)](https://zenodo.org/badge/latestdoi/366734586)
+
+[![LIFD_ConvolutionalNeuralNetworks](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetwork/actions/workflows/python-package-conda.yml) 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/cemac/LIFD_ConvolutionalNeuralNetwork/HEAD?labpath=CNN.ipynb)
 
 This notebook explores Convolutional Neural Networks to detect and categorise Volcanic deformation.
 
@@ -11,11 +25,11 @@ If you are unfamiliar with some of the concepts covered in this tutorial it's re
 
 ## Quick look
 
-If you want a quick look at the contents inside the notebook before deciding to run it please view the [md file](https://github.com/cemac/LIFD_ENV_ML_NOTEBOOKS/blob/main/ConvolutionalNeuralNetworks/CNN_Volcanic_deformation.md) generated (*note some HTML code not rendered fully*)
+If you want a quick look at the contents inside the notebook before deciding to run it please view the [md file](https://github.com/cemac/LIFD_ConvolutionalNeuralNetwork/blob/main/ConvolutionalNeuralNetworks/CNN_Volcanic_deformation.md) generated (*note some HTML code not rendered fully*)
 
 ## Installation and Requirements
 
-This notebook is designed to run on a laptop with no special hardware required therefore recommended to do a local installation as outlined in the repository [howtorun](../howtorun.md) and [jupyter_notebooks](../jupyter_notebooks.md) sections.
+This notebook is designed to run on a laptop with no special hardware required therefore recommended to do a local installation as outlined in the repository [howtorun](https://github.com/cemac/LIFD_ENV_ML_NOTEBOOKS/howtorun.md) and [jupyter_notebooks](https://github.com/cemac/LIFD_ENV_ML_NOTEBOOKS/jupyter_notebooks.md) sections.
 
 
 These notebooks require some additional data from the [VolcNet](https://github.com/matthew-gaddes/VolcNet) repository
