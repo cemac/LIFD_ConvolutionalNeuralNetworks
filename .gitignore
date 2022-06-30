@@ -1,0 +1,6 @@
+**/*.npz
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+**/__pycache__
+ConvolutionalNeuralNetworks/data/real/
+ConvolutionalNeuralNetworks/data/merged_out/
