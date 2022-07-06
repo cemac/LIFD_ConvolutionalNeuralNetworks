@@ -34,7 +34,8 @@ If you're already familiar with git, anaconda and virtual environments the envir
 
 ```bash
 git clone  --recurse-submodules -j8 git@github.com:cemac/LIFD_ConvolutionalNeuralNetworks.git
-conda env create -f CNN.yml # Use the
+cd LIFD_ConvolutionalNeuralNetworks
+conda env create -f CNN.yml # Use the CNN_windows.yml if on windows machine
 conda activate CNN
 jupyter-notebook
 ```
@@ -54,3 +55,12 @@ git submodule update --init --recursive
 ```
 
 **If this does not work please clone the [VolcNet](https://github.com/matthew-gaddes/VolcNet) repository into your ConvolutionalNeuralNetworks folder on your computer**
+
+
+# Licence information #
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">LIFD_ENV_ML_NOTEBOOKS</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://cemac.leeds.ac.uk/" property="cc:attributionName" rel="cc:attributionURL">cemac</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+## Acknowledgements
+
+Thanks to Matthew Gaddes for the basis of this tutotial. This tutorial is part of the [LIFD ENV ML NOTEBOOKS](https://github.com/cemac/LIFD_ENV_ML_NOTEBOOKS) please refer to for full acknowledgements.

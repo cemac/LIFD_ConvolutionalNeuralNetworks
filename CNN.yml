@@ -14,9 +14,7 @@ dependencies:
   - notebook
   - scipy
   - numpy
-  - cudnn
   - pip>20.3
   - pip:
     - tensorflow>=2.3
     - tensorflow_estimator>=2.4.0
- 
