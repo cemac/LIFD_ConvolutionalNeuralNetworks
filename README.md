@@ -11,7 +11,7 @@
 
 [![GitHub release](https://img.shields.io/github/release/cemac/LIFD_ConvolutionalNeuralNetworks.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/releases) [![GitHub top language](https://img.shields.io/github/languages/top/cemac/LIFD_ConvolutionalNeuralNetworks.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks) [![GitHub issues](https://img.shields.io/github/issues/cemac/LIFD_ConvolutionalNeuralNetworks.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/issues) [![GitHub last commit](https://img.shields.io/github/last-commit/cemac/LIFD_ConvolutionalNeuralNetworks.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/commits/master) [![GitHub All Releases](https://img.shields.io/github/downloads/cemac/LIFD_ConvolutionalNeuralNetworks/total.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/releases) ![GitHub](https://img.shields.io/github/license/cemac/LIFD_ConvolutionalNeuralNetworks.svg)[![DOI](https://zenodo.org/badge/366734586.svg)](https://zenodo.org/badge/latestdoi/366734586)
 
-[![LIFD_ConvolutionalNeuralNetworks](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetwork/actions/workflows/python-package-conda.yml)
+[![LIFD_ConvolutionalNeuralNetworks](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/actions/workflows/python-package-conda.yml/badge.svg)](https://github.com/cemac/LIFD_ConvolutionalNeuralNetworks/actions/workflows/python-package-conda.yml)
 
 
 This notebook explores Convolutional Neural Networks to detect and categorise Volcanic deformation. To cater for low performance machines additional pre-made models and processed data are provided making **this repository 3.1G**. Therefore it's advised to read the installation instructions below for a parallel git-clone. No [binder](https://mybinder.readthedocs.io/en/latest/index.html#what-is-binder) link is provided as the datasets used are too large for the free tier.
@@ -35,6 +35,9 @@ If you're already familiar with git, anaconda and virtual environments the envir
 ```bash
 git clone  --recurse-submodules -j8 git@github.com:cemac/LIFD_ConvolutionalNeuralNetworks.git
 cd LIFD_ConvolutionalNeuralNetworks
+wget -O data.tar.gz https://github.com/cemachelen/LIFD_ML_LARGE_FILE_STORE/archive/refs/tags/0.1-alpha.tar.gz
+tar -xvf data.tar.gz
+cp -rp LIFD_ML_LARGE_FILE_STORE-0.1-alpha/ConvolutionalNeuralNetworks/synthetic_data/*.pkl data/synthetic_data/
 conda env create -f CNN.yml # Use the CNN_windows.yml if on windows machine
 conda activate CNN
 jupyter-notebook
@@ -45,7 +48,7 @@ jupyter-notebook
 This notebook is designed to run on a laptop with no special hardware required therefore recommended to do a local installation as outlined in the repository [howtorun](https://github.com/cemac/LIFD_ENV_ML_NOTEBOOKS/howtorun.md) and [jupyter_notebooks](https://github.com/cemac/LIFD_ENV_ML_NOTEBOOKS/jupyter_notebooks.md) sections.
 
 
-These notebooks require some additional data from the [VolcNet](https://github.com/matthew-gaddes/VolcNet) repository
+These notebooks require some additional data from the [VolcNet](https://github.com/matthew-gaddes/VolcNet) repository.
 
 If you have cloned already without the `--recurse` flag then in your gitbash or terminal please run the following code in the LIFD_ENV_ML_NOTEBOOKS directory via the terminal(mac or Linux)  or git bash (windows)
 
@@ -56,6 +59,7 @@ git submodule update --init --recursive
 
 **If this does not work please clone the [VolcNet](https://github.com/matthew-gaddes/VolcNet) repository into your ConvolutionalNeuralNetworks folder on your computer**
 
+Some data files are also required and instructions to do this are given above in a `wget` command. The notebook will also prompt you to do this.
 
 # Licence information #
 
